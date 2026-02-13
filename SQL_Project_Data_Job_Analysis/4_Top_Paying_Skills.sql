@@ -1,10 +1,6 @@
 /*
-Quesiton: What are the top paying data analyst jobs?
--Identify the top 10 higest paying Data Analyst roles available in the state of Florida. Focus on postings that have specified salaries.
--What skills are required for higher paying jobs?
--What are the top 5 in demand skills in the state of Florida?
--Top Paying skills
-
+Quesiton: 
+-What are the top Paying skills?
 */
 
 SELECT
