@@ -49,4 +49,8 @@ SELECT
     avg_salary.average_salary
 FROM skills_demand
 INNER JOIN avg_salary
-    ON skills_demand.skill_id = avg_salary.skill_id;
+    ON skills_demand.skill_id = avg_salary.skill_id
+ORDER BY
+    skills_demand.demand_count DESC,
+    avg_salary.average_salary DESC
+LIMIT 25;
