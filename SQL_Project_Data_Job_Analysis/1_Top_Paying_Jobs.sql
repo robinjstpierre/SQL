@@ -12,8 +12,7 @@ SELECT
     name AS company_name,
     job_location,
     job_schedule_type,
-    salary_year_avg,
-    job_posted_date
+    salary_year_avg
 FROM 
     job_postings_fact
 LEFT JOIN company_dim
