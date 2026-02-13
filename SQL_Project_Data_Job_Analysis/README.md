@@ -94,6 +94,50 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY    
     salary_year_avg DESC;
 ```
+| job_id  | job_title                                                   | company_name                       | job_location | salary_year_avg | skills     |
+|---------|-------------------------------------------------------------|------------------------------------|--------------|-----------------|------------|
+| 103610  | Lead Data Analyst, Technology & Digital, Full-Time,8A-4:30P | Baptist Health South Florida       | Florida      | 129503.5        | sql        |
+| 103610  | Lead Data Analyst, Technology & Digital, Full-Time,8A-4:30P | Baptist Health South Florida       | Florida      | 129503.5        | python     |
+| 103610  | Lead Data Analyst, Technology & Digital, Full-Time,8A-4:30P | Baptist Health South Florida       | Florida      | 129503.5        | r          |
+| 103610  | Lead Data Analyst, Technology & Digital, Full-Time,8A-4:30P | Baptist Health South Florida       | Florida      | 129503.5        | excel      |
+| 103610  | Lead Data Analyst, Technology & Digital, Full-Time,8A-4:30P | Baptist Health South Florida       | Florida      | 129503.5        | tableau    |
+| 1510307 | Launch Test Range Systems Data Analyst                      | United States Space Force          | Florida      | 126339.5        | sql        |
+| 1510307 | Launch Test Range Systems Data Analyst                      | United States Space Force          | Florida      | 126339.5        | python     |
+| 1510307 | Launch Test Range Systems Data Analyst                      | United States Space Force          | Florida      | 126339.5        | r          |
+| 1510307 | Launch Test Range Systems Data Analyst                      | United States Space Force          | Florida      | 126339.5        | sas        |
+| 1510307 | Launch Test Range Systems Data Analyst                      | United States Space Force          | Florida      | 126339.5        | pyspark    |
+| 1510307 | Launch Test Range Systems Data Analyst                      | United States Space Force          | Florida      | 126339.5        | sas        |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | sql        |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | t-sql      |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | sql server |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | azure      |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | aws        |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | gcp        |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | power bi   |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | ssis       |
+| 415535  | Data Analyst                                                | firstPRO, Inc                      | Florida      | 115000.0        | ssrs       |
+| 769442  | Data Analyst, Business Operations                           | HirePlace                          | Florida      | 90000.0         | sql        |
+| 769442  | Data Analyst, Business Operations                           | HirePlace                          | Florida      | 90000.0         | tableau    |
+| 769442  | Data Analyst, Business Operations                           | HirePlace                          | Florida      | 90000.0         | airtable   |
+| 349736  | Data Analyst                                                | Vertex Solutions Inc.              | Florida      | 82500.0         | sql        |
+| 349736  | Data Analyst                                                | Vertex Solutions Inc.              | Florida      | 82500.0         | tableau    |
+| 349736  | Data Analyst                                                | Vertex Solutions Inc.              | Florida      | 82500.0         | power bi   |
+| 256884  | Lead Business Data Analyst                                  | Revolution Technologies            | Florida      | 79560.0         | excel      |
+| 683103  | Data Analyst-Life Cycle Maintenance                         | ENGINEERING SERVICES NETWORK, Inc. | Florida      | 70250.0         | excel      |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | sql        |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | python     |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | sas        |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | matlab     |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | excel      |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | sas        |
+| 708814  | IT Data and Process Analyst                                 | pcms staffing                      | Florida      | 57500.0         | spss       |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | sql        |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | python     |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | sas        |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | matlab     |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | excel      |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | sas        |
+| 1645436 | IT Data Process Analyst                                     | pcms staffing                      | Florida      | 57500.0         | spss       |
 
 ### 3) Top 5 In-Demand Skills (Florida Data Analyst Market)
 - Aggregated skill occurrences across all Florida Data Analyst postings
@@ -118,6 +162,13 @@ GROUP BY
 ORDER BY demand_count DESC
 LIMIT 5;
 ```
+| skills  | demand_count |
+|---------|--------------|
+| sql     | 83           |
+| excel   | 57           |
+| python  | 38           |
+| tableau | 35           |
+| r       | 28           |
 
 ### 4) Top Paying Skills
 - Calculated average salary grouped by skill
@@ -144,3 +195,23 @@ ORDER BY
     Average_Salary DESC
 LIMIT 25;
 ```
+| skills     | average_salary |
+|------------|----------------|
+| r          | 127922         |
+| pyspark    | 126340         |
+| azure      | 115000         |
+| t-sql      | 115000         |
+| gcp        | 115000         |
+| ssrs       | 115000         |
+| ssis       | 115000         |
+| sql server | 115000         |
+| aws        | 115000         |
+| tableau    | 100668         |
+| power bi   | 98750          |
+| sql        | 94049          |
+| python     | 92711          |
+| airtable   | 90000          |
+| sas        | 80447          |
+| excel      | 78863          |
+| spss       | 57500          |
+| matlab     | 57500          |
